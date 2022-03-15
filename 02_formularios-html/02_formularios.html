@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02 formulario</title>
+  </head>
+  <body>
+    <section id="main-section">
+      <div id="formulario" class="section">
+        <form
+          action="/controlador-registro"
+          method="POST"
+          class="form-registro"
+          id="form-registro"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="Nombre">Nombre y Apellido*</label>
+            <input
+              type="text"
+              class="input input-text"
+              name="nombre"
+              required
+              placeholder="Pepito Honguito"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Mail">Email*</label>
+            <input
+              type="mail"
+              class="input"
+              name="mail"
+              required
+              placeholder="pepito@honguito.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Telefono">Teléfono*</label>
+            <input
+              type="number"
+              class="input"
+              name="telefono"
+              placeholder="2615462587"
+            />
+          </div>
+          <div class="form-group">
+            <label for="radio-input">Teléfono*</label>
+            <input  type="radio" />
+            <label for="radio-input">Teléfono*</label>
+            <input  type="radio" />
+            <label for="radio-input">Teléfono*</label>
+            <input  type="radio" />
+          </div>
+          <div class="form-group">
+            <label for="pais">País</label>
+            <select name="pais" id="pais" class="input">
+              <option value="arg">ARG</option>
+              <option value="chi">CHI</option>
+              <option value="brz">BRZ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="imagen">Imagen de perfil</label>
+            <input type="file" class="input" name="imagen" />
+          </div>
+          <div class="form-group">
+            <label for="fecha">Alguna fecha</label>
+            <input
+              type="date"
+              name="fecha-inicio"
+              min="2015-01-01"
+              max="2020-06-20"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contrasena" class="contrasena">Contraseña*</label>
+            <input
+              type="password"
+              class="input"
+              name="contrasena"
+              pattern=".{8,}"
+              placeholder="Ingrese al menos 8 dígitos"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contrasena" class="contrasena">Repetir contraseña*</label>
+            <input
+              type="password"
+              class="input"
+              name="contrasena"
+              pattern=".{8,}"
+              placeholder="Ingrese al menos 8 dígitos"
+            />
+          </div>
+
+          <button type="submit" class="link btn">Registrarme</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

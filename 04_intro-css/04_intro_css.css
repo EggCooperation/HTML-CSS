@@ -1,0 +1,20 @@
+body .section {
+  color:red;
+}
+#izquierda{
+
+}
+.section{}
+.section.section-izquierda p:first-of-type{
+  color:#00ffff
+}
+a:hover{
+  color:green;
+}
+
+header::after{
+  content: 'pseudo elemento';
+  color:yellow;
+  background:red
+}
+
